@@ -1,46 +1,8 @@
-# Exno:1
-Data Cleaning Process
-
-# AIM
-To read the given data and perform data cleaning and save the cleaned data to a file.
-
-# Explanation
-Data cleaning is the process of preparing data for analysis by removing or modifying data that is incorrect ,incompleted , irrelevant , duplicated or improperly formatted. Data cleaning is not simply about erasing data ,but rather finding a way to maximize datasets accuracy without necessarily deleting the information.
-
-# Algorithm
-STEP 1: Read the given Data
-
-STEP 2: Get the information about the data
-
-STEP 3: Remove the null values from the data
-
-STEP 4: Save the Clean data to the file
-
-STEP 5: Remove outliers using IQR
-
-STEP 6: Use zscore of to remove outliers
 
 # Coding and Output
 
 import pandas as pd 
 
-df=pd.read_csv("data_set.csv")
-
-df
-
-<img><img width="1216" height="456" alt="image" src="https://github.com/user-attachments/assets/986fe36b-40c0-4379-b9c4-b4da946ea4ef" />
-
-df.isnull()
-
-<img><img width="714" height="525" alt="image" src="https://github.com/user-attachments/assets/72174c10-00f1-4b0c-af06-271347081b45" />
-
-df.isnull().sum()
-
-<img><img width="375" height="197" alt="image" src="https://github.com/user-attachments/assets/c7d362d0-5d05-4c42-9a62-784396adf16b" />
-
-df.notnull()
-
-<img><img width="1062" height="467" alt="image" src="https://github.com/user-attachments/assets/8a2a8faf-cef4-40a8-8f0d-11bb2ad8a744" />
 
 print(df.dropna(axis=0))
 
